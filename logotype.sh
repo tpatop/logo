@@ -1,11 +1,8 @@
 #!/bin/bash
 
-# Check if figlet is installed
+# Check if figlet is installed and install if not
 if ! command -v figlet &> /dev/null; then
-    echo "figlet is not installed. Installing..."
-    sudo apt install figlet -y  # Install if not present
-else
-    echo "figlet is already installed."
+    sudo apt install figlet -y  # Install figlet if not present
 fi
 
 # Regular copyable text in red
